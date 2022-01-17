@@ -15,6 +15,8 @@ public class PlayerMovement : EntityMovement
 
         playerInput.RegisterBind(InputJump, "Jump", ActionEventType.Performed);
         playerInput.RegisterBind(CancelInputJump, "Jump", ActionEventType.Cancelled);
+
+        _jumpForce = settingsSO.jumpPower;
     }
 
     private void Update()

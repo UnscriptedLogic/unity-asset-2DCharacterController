@@ -77,8 +77,6 @@ public class EntityMovement : MonoBehaviour
         if (_jumpTime < settingsSO.extraJumpTime && isJumping)
         {
             Jump();
-            _jumpCurveTime += settingsSO.curveSpeed * Time.deltaTime;
-            _jumpForce = Mathf.Lerp(_jumpForce, 0f, settingsSO.extraJumpCurve.Evaluate(_jumpCurveTime));
             _jumpTime += Time.deltaTime;
         }
         else

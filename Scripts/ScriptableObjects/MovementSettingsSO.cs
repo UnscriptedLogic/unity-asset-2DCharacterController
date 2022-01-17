@@ -24,6 +24,6 @@ public class MovementSettingsSO : ScriptableObject
 
     [Space(15)]
     public float extraJumpTime = 0.3f;
-    public float curveSpeed = 1f;
-    public AnimationCurve extraJumpCurve;
+    //public float curveSpeed = 1f;
+    //public AnimationCurve extraJumpCurve;
 }
